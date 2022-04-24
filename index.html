@@ -1,0 +1,531 @@
+<!-- Finished Restaurant website.
+Help from Alex Codes 
+https://www.youtube.com/watch?v=5xkCmXaJVug    -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/logo2.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Googlefonts below -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slick Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Animation on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Stylesheet below -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Joe's Diner</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="nav">
+          <a href="index.html" class="logo">
+            <img src="img/logo2.png" alt="logo" />
+            <!-- <h1>Joe's Restaurant</h1> -->
+          </a>
+
+          <div class="nav__button">
+            <span class="nav__icon"></span>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#team" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reservation" class="nav-link">Reservations</a>
+            </li>
+          </ul>
+
+          <ul class="icons">
+            <!-- <li class="icon"><i class="fas fa-search"></i></li> -->
+            <li class="icon"><i class="fab fa-facebook"></i></li>
+            <li class="icon"><i class="fab fa-instagram"></i></li>
+            <li class="icon"><i class="fab fa-twitter"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero" id="home">
+        <div class="container">
+          <div class="premium-container">
+            <!-- <img class="premium" src="img/Premium.png" alt="Premium" /> -->
+            <h3 class="quality">Quality Cuisine</h3>
+          </div>
+
+          <div class="restaurant-title">
+            <h1 class="title">Joe's Restaurant <br /></h1>
+          </div>
+        </div>
+
+        <a href="#" class="go-top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+
+      <section class="offers">
+        <div class="container">
+          <h2 class="section-title">What We Can Offer</h2>
+          <h3 class="section-subtitle">from our hearts</h3>
+          <div class="three-columns-grid">
+            <div
+              class="grid-item"
+              data-aos="fade-right"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img src="img/pic4.png" alt="" width="200" />
+              <h3 class="subtitle"><strong>Fresh</strong> Seafood</h3>
+              <p class="paragraph">
+                Quality fresh Seafood that Seattle is known for.
+              </p>
+            </div>
+            <div
+              class="grid-item"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img src="img/pic5.png" alt="" width="200" />
+              <h3 class="subtitle"><strong>Vegan</strong> Options</h3>
+              <p class="paragraph">
+                A variety of Vegan options to include everyone.
+              </p>
+            </div>
+            <div
+              class="grid-item"
+              data-aos="fade-left"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img src="img/pic6.png" alt="" width="200" />
+              <h3 class="subtitle"><strong>Quality</strong> Poultry</h3>
+              <p class="paragraph">
+                Tender top sirloin served with salad and other options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container-fluid">
+          <div class="two-columns-grid">
+            <div
+              class="top-tart"
+              data-aos="fade-right"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img src="img/food&drink.jpg" alt="Tart" class="tart" />
+            </div>
+
+            <div
+              class="about-us"
+              data-aos="fade-left"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <h2 class="section-title welcome">Welcome to Joe's Restaurant</h2>
+              <p class="about-paragraph">
+                Gather with friends and family as you celebrate life with an
+                assortment of premium cocktails & beverages. Check out our wine
+                list and the local breweries that we support.
+              </p>
+              <a href="#" class="btn">About</a>
+            </div>
+          </div>
+
+          <div class="two-columns-grid third-grid">
+            <div
+              class="read-more"
+              data-aos="fade-right"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <h2 class="section-title welcom">
+                Locally owned for 15 years and counting
+              </h2>
+              <p class="about-paragraph">
+                Conduct group meetings, family gatherings, and commendmorate an
+                end to a busy work day with us. Ask about our catering options.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
+            <div
+              class="top-fruits"
+              data-aos="fade-left"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img
+                src="img/group-of-people-making-toast.jpg"
+                alt="group toast"
+                class="fruits"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+          <h3 class="section-subtitle">is the best</h3>
+          <div class="four-columns-grid">
+            <div class="team-member">
+              <img src="img/client-1.jpg" alt="Team Member 1" />
+              <h2 class="name">Mark Twain</h2>
+              <h3 class="position">Manager</h3>
+              <p class="description-paragraph">
+                Mark enjoys bike riding, snowboarding, and tennis. He grew up
+                locally and continues to serve the community.
+              </p>
+            </div>
+            <div class="team-member">
+              <img src="img/client-3.jpg" alt="Team Member 2" />
+              <h2 class="name">Jackie Folsom</h2>
+              <h3 class="position">Bar Director</h3>
+              <p class="description-paragraph">
+                Jackie loves to walk her dog and loves to travel when she has
+                free time.
+              </p>
+            </div>
+            <div class="team-member">
+              <img src="img/client-2.jpg" alt="Team Member 3" />
+              <h2 class="name">Robert Mullin</h2>
+              <h3 class="position">Head Chef</h3>
+              <p class="description-paragraph">
+                Robert enjoys watching movie series such as Breaking Bad and
+                Game of Thrones. His favorite dish to prepare is Lasagne alla
+                Bolognese.
+              </p>
+            </div>
+            <div class="team-member">
+              <img src="img/client-6.jpg" alt="Team Member 4" />
+              <h2 class="name">Becky Wynne</h2>
+              <h3 class="position">Wine Director</h3>
+              <p class="description-paragraph">
+                Becky volunteers at her local animal shelter when she is not
+                shopping. Kayaking is one of her favorite things to do.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="menu-header"></div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <img src="img/fish&steak.png" alt="Fish & Steak" class="fish" />
+            <h2 class="section-title menu-title">Enjoy The Best Cuisine</h2>
+            <h3 class="section-subtitle">on this planet</h3>
+          </div>
+
+          <div class="two-columns-grid">
+            <div class="starters">
+              <h2>Starters</h2>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Flat Bread with Hummus</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quia, similique?
+                </p>
+              </div>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Chicken Wings</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quia, similique?
+                </p>
+              </div>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Top Ramen Noodles</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quia, similique?
+                </p>
+              </div>
+            </div>
+
+            <div class="mains">
+              <h2>Mains</h2>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Steak & Lobster</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quia, similique?
+                </p>
+              </div>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Jumbo-liar</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quia, similique?
+                </p>
+              </div>
+              <div class="starter">
+                <div class="starter-header">
+                  <h3>Gourmet Dick's Burger</h3>
+                  <h4 class="price">$10.50</h4>
+                </div>
+                <p class="menu-paragraph">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quia, similique?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customers">
+        <div class="container">
+          <h2 class="section-title">Customer</h2>
+          <h3 class="section-subtitle">stories about us</h3>
+          <div class="carousel">
+            <div>
+              <img src="img/carousel1.png" alt="profile" />
+              <p class="testimonial-paragraph">
+                A co-worker and I loved going here after work. We had a few
+                drinks and enjoyed our happy hour dinner.
+              </p>
+              <h2 class="name">Megan Christina</h2>
+            </div>
+            <div>
+              <img src="img/carousel2.png" alt="profile" />
+              <p class="testimonial-paragraph">
+                I would reccommend this spot to anyone visiting as their initial
+                spot. Fare prices and great options.
+              </p>
+              <h2 class="name">Robert Townsend</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book" id="reservation">
+        <div class="container-fluid">
+          <div class="book-card">
+            <h2 class="section-title book-title">
+              Book Ahead For Reservations
+            </h2>
+            <h3 class="section-subtitle">
+              We will confirm order via E-mail or Phone
+            </h3>
+            <div class="two-columns-grid">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="first"
+                  class="input"
+                  placeholder="First Name*"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="last"
+                  class="input"
+                  placeholder="Last Name*"
+                />
+              </div>
+            </div>
+
+            <div class="two-columns-grid">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  class="input"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="phone"
+                  class="input"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+
+            <div class="three-columns-grid">
+              <div class="form-group">
+                <input type="date" id="date" />
+              </div>
+              <div class="form-group">
+                <select name="time" id="time">
+                  <option value="">9:00</option>
+                  <option value="">10:00</option>
+                  <option value="">11:00</option>
+                  <option value="">12:00</option>
+                  <option value="">1:00</option>
+                  <option value="">2:00</option>
+                  <option value="">3:00</option>
+                  <option value="">4:00</option>
+                  <option value="">5:00</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select name="persons" id="persons">
+                  <option value="">Person*</option>
+                  <option value="">1 Person</option>
+                  <option value="">2 Person</option>
+                  <option value="">3 Person</option>
+                  <option value="">4 Person</option>
+                  <option value="">5 Person</option>
+                </select>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="exit">
+      <h1>Thank You for Visiting!</h1>
+    </div>
+
+    <footer class="footer">
+      <div class="contact-wrap">
+        <div class="contact-in">
+          <h1>Contact Info</h1>
+          <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+          <p>123-456-7898</p>
+          <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+          <p>info@democompany.com</p>
+          <h2>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Address
+          </h2>
+          <p>727 Pine St, Seattle, WA 98101</p>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a href="#"><i class="fab fa-google" aria-hidden="true"></i></a>
+            </li> -->
+            <li>
+              <a href="#"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-in">
+          <h1>Send a Review</h1>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="contact-in-input"
+            />
+            <input type="text" placeholder="Email" class="contact-in-input" />
+            <input type="text" placeholder="Subject" class="contact-in-input" />
+            <textarea
+              placeholder="Message"
+              class="contact-in-textarea"
+            ></textarea>
+            <input type="submit" value="SUBMIT" class="contact-in-btn" />
+          </form>
+        </div>
+        <div class="contact-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172139.4161662446!2d-122.48214752341369!3d47.61294318323425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1642931365749!5m2!1sen!2sus"
+            width="100%"
+            height="auto"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright &copy; 2022 by Anthony P All Rights Reserved
+      </p>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
+      integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
